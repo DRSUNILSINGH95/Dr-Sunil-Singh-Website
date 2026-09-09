@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Sunil Singh — Geographer, GIS &amp; Remote Sensing Researcher, Mody University</title>
+<meta name="description" content="Dr. Sunil Singh is an Assistant Professor of Geography at Mody University of Science and Technology, Rajasthan. Research in solar energy potential mapping, GIS, remote sensing, forest fire risk and watershed analysis. Consulting, training and student supervision available.">
+<meta name="keywords" content="Sunil Singh, Geography, GIS, Remote Sensing, Geospatial Modeling, Solar Energy Potential, Mody University, Rajasthan, QGIS, ArcGIS, Google Earth Engine, watershed prioritization, forest fire risk zonation">
+<meta name="author" content="Dr. Sunil Singh">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://drsunilsingh.example.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Dr. Sunil Singh — Geographer, GIS & Remote Sensing Researcher">
+<meta property="og:description" content="Assistant Professor of Geography, Mody University of Science and Technology. Research in renewable energy assessment, geospatial modeling and natural resource management.">
+<meta property="og:url" content="https://drsunilsingh.example.com/">
+<meta property="og:site_name" content="Dr. Sunil Singh">
+<meta property="og:image" content="https://lh3.googleusercontent.com/sitesv/AG8ngQUuVJW4nXYwODZ3lIAZ-hG2acaSZfdDAg1ED5RDUwrFcOZIlNvDMjlbaQVuYYqBeR0icb6xOUiBA_G7mvDoiG-q6V8qpQNBD6acE0OjpplVwy2EQWm5VS_x7Po19z1y1evRdqBDbhCRMdFaewkS8Xy5WHpE_ujufFsDkp5J0CdM1OyOEznQIPTL376V=w1200">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dr. Sunil Singh — Geographer, GIS & Remote Sensing Researcher">
+<meta name="twitter:description" content="Assistant Professor of Geography, Mody University of Science and Technology. Research in renewable energy assessment, geospatial modeling and natural resource management.">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Sunil Singh",
+  "jobTitle": "Assistant Professor of Geography",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "Mody University of Science and Technology",
+    "address": "Lakshmangarh, Sikar, Rajasthan, India"
+  },
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "Hemvati Nandan Bahuguna Garhwal University"},
+    {"@type": "CollegeOrUniversity", "name": "Dr. Shyama Prasad Mukherjee University"}
+  ],
+  "email": "mailto:sunilgeo95@gmail.com",
+  "sameAs": [
+    "https://scholar.google.com/citations?user=72usOMIAAAAJ&hl=en",
+    "https://www.researchgate.net/profile/Sunil-Singh-40?ev=hdr_xprf"
+  ],
+  "knowsAbout": ["Geography", "GIS", "Remote Sensing", "Geospatial Modeling", "Renewable Energy Assessment", "Natural Resource Management"]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#1c2b24;
+    --paper:#f4efe2;
+    --forest:#3b5d45;
+    --forest-dim:#4f705a;
+    --ochre:#b8863c;
+    --mist:#6e7b76;
+    --line: rgba(28,43,36,0.14);
+    --paper-raise:#eee7d4;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size:16px;
+    line-height:1.65;
+  }
+  h1,h2,h3{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:500;
+    letter-spacing:-0.01em;
+    margin:0;
+  }
+  .mono{ font-family:"IBM Plex Mono", monospace; }
+  a{ color:var(--forest); text-decoration-color: rgba(59,93,69,0.4); }
+  a:hover{ color:var(--ochre); }
+  img{max-width:100%; display:block;}
+
+  /* skip link for accessibility */
+  .skip-link{
+    position:absolute; left:-999px; top:0; background:var(--ink); color:var(--paper);
+    padding:10px 16px; z-index:100;
+  }
+  .skip-link:focus{ left:12px; top:12px; }
+
+  .shell{
+    display:grid;
+    grid-template-columns: 300px 1fr;
+    max-width:1180px;
+    margin:0 auto;
+  }
+
+  /* ---- Sidebar ---- */
+  aside{
+    padding: 56px 32px 40px 40px;
+    position: sticky; top:0; align-self:start; height:100vh;
+    display:flex; flex-direction:column; justify-content:space-between;
+  }
+  .brand{ }
+  .brand .name{ font-size:1.55rem; line-height:1.2; }
+  .brand .role{
+    margin-top:10px; color:var(--forest-dim); font-size:0.92rem;
+  }
+  nav.sidenav{ margin-top:48px; }
+  nav.sidenav a{
+    display:block; padding:7px 0; color:var(--ink); text-decoration:none;
+    font-size:0.94rem; border-left:2px solid transparent; padding-left:12px;
+    margin-left:-13px;
+  }
+  nav.sidenav a:hover, nav.sidenav a.active{
+    border-left-color: var(--ochre); color:var(--forest);
+  }
+  .sidefoot{ font-size:0.8rem; color:var(--mist); }
+  .sidefoot a{ color:var(--mist); }
+
+  /* ---- Hero with contour texture ---- */
+  .hero{
+    position:relative; overflow:hidden;
+    padding: 84px 56px 64px 56px;
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 0 0 2px 2px;
+  }
+  .hero svg.contours{
+    position:absolute; inset:0; width:100%; height:100%;
+    opacity:0.22;
+  }
+  .hero-inner{ position:relative; max-width:640px; }
+  .eyebrow{
+    font-family:"IBM Plex Mono", monospace; font-size:0.78rem;
+    color:#cdbf8f; letter-spacing:0.02em;
+  }
+  .hero h1{
+    font-size:2.6rem; color:var(--paper); margin-top:14px; line-height:1.12;
+  }
+  .hero p.lede{
+    margin-top:20px; font-size:1.08rem; color:#d9d3c1; max-width:56ch;
+  }
+  .hero-links{ margin-top:28px; display:flex; gap:22px; flex-wrap:wrap;}
+  .hero-links a{
+    color:#e9e2c9; font-size:0.92rem; padding-bottom:2px;
+    border-bottom:1px solid rgba(233,226,201,0.4); text-decoration:none;
+  }
+  .hero-links a:hover{ color:var(--ochre); border-color:var(--ochre); }
+
+  /* ---- Main content ---- */
+  main{ padding: 64px 56px 100px 56px; }
+  section{ padding-bottom:64px; margin-bottom:64px; border-bottom:1px solid var(--line); }
+  section:last-of-type{ border-bottom:none; }
+  section h2{
+    font-size:1.5rem; margin-bottom:28px; display:flex; align-items:baseline; gap:14px;
+  }
+  section h2 .tag{
+    font-family:"IBM Plex Mono", monospace; font-size:0.72rem; color:var(--ochre);
+    font-weight:400; letter-spacing:0.03em;
+  }
+  .bio p{ max-width:70ch; margin:0 0 16px 0; }
+  .bio p:last-child{ margin-bottom:0; }
+
+  .timeline{ list-style:none; margin:0; padding:0; }
+  .timeline li{
+    display:grid; grid-template-columns: 132px 1fr; gap:20px;
+    padding:18px 0; border-top:1px solid var(--line);
+  }
+  .timeline li:first-child{ border-top:none; }
+  .timeline .period{ font-family:"IBM Plex Mono", monospace; font-size:0.82rem; color:var(--forest-dim); padding-top:2px;}
+  .timeline .role{ font-weight:600; }
+  .timeline .org{ color:var(--mist); font-size:0.94rem; margin-top:2px; }
+
+  .award-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 18px 32px; }
+  .award{
+    padding:18px 0; border-top:1px solid var(--line);
+  }
+  .award .year{ font-family:"IBM Plex Mono", monospace; font-size:0.78rem; color:var(--ochre); }
+  .award .name{ font-weight:600; margin-top:4px; }
+  .award .org{ color:var(--mist); font-size:0.9rem; margin-top:2px; }
+
+  .toolgrid{ display:flex; flex-wrap:wrap; gap:10px; }
+  .toolgrid span{
+    font-family:"IBM Plex Mono", monospace; font-size:0.8rem;
+    padding:6px 12px; background:var(--paper-raise); border-radius:3px; color:var(--ink);
+  }
+
+  .outbound{
+    display:grid; grid-template-columns: 1fr 1fr; gap:16px;
+  }
+  .outbound a{
+    display:block; padding:20px 22px; background:var(--paper-raise); text-decoration:none;
+    border-left:3px solid var(--forest); color:var(--ink);
+  }
+  .outbound a:hover{ border-left-color: var(--ochre); }
+  .outbound .k{ font-weight:600; }
+  .outbound .d{ color:var(--mist); font-size:0.88rem; margin-top:4px; }
+
+  .contact-block{
+    display:grid; grid-template-columns: 1.1fr 0.9fr; gap:48px;
+  }
+  address{ font-style:normal; color:var(--mist); line-height:1.7; }
+  address a{ color:var(--forest); }
+  .cta-box{
+    background:var(--forest); color:var(--paper); padding:26px 28px; border-radius:2px;
+  }
+  .cta-box h3{ color:var(--paper); font-size:1.15rem; }
+  .cta-box p{ color:#dfe8e1; font-size:0.92rem; margin-top:10px; }
+  .cta-box a{
+    display:inline-block; margin-top:14px; color:var(--ink); background:var(--ochre);
+    padding:9px 16px; text-decoration:none; font-size:0.88rem; font-weight:600; border-radius:2px;
+  }
+  .cta-box a:hover{ background:#cf9a4f; color:var(--ink); }
+
+  footer{
+    padding:28px 56px; color:var(--mist); font-size:0.82rem;
+    border-top:1px solid var(--line);
+  }
+
+  /* mobile top nav */
+  .mobile-nav{ display:none; }
+
+  @media (max-width: 900px){
+    .shell{ grid-template-columns: 1fr; }
+    aside{
+      position:relative; height:auto; padding:28px 24px 8px 24px;
+      flex-direction:row; align-items:center; justify-content:space-between;
+    }
+    nav.sidenav{ display:none; }
+    .sidefoot{ display:none; }
+    .mobile-nav{
+      display:flex; gap:16px; overflow-x:auto; padding:14px 24px;
+      border-bottom:1px solid var(--line); border-top:1px solid var(--line);
+      -webkit-overflow-scrolling:touch;
+    }
+    .mobile-nav a{
+      white-space:nowrap; font-size:0.85rem; color:var(--forest); text-decoration:none;
+      font-family:"IBM Plex Mono", monospace;
+    }
+    .hero{ padding:48px 24px 44px 24px; }
+    .hero h1{ font-size:2rem; }
+    main{ padding:44px 24px 60px 24px; }
+    .award-grid, .outbound, .contact-block{ grid-template-columns: 1fr; }
+    .timeline li{ grid-template-columns: 1fr; gap:4px; }
+    footer{ padding:24px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="shell">
+  <aside>
+    <div>
+      <div class="brand">
+        <div class="name">Dr. Sunil Singh</div>
+        <div class="role">Geographer · GIS &amp; Remote Sensing</div>
+      </div>
+      <nav class="sidenav" aria-label="Section navigation">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#awards">Awards &amp; Fellowships</a>
+        <a href="#tools">Technical Skills</a>
+        <a href="#work">Publications &amp; Profiles</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="sidefoot">
+      Mody University of Science and Technology<br>
+      Lakshmangarh, Sikar, Rajasthan
+    </div>
+  </aside>
+
+  <div>
+    <header class="mobile-nav" aria-label="Section navigation">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+      <a href="#tools">Skills</a>
+      <a href="#work">Publications</a>
+      <a href="#contact">Contact</a>
+    </header>
+
+    <section class="hero">
+      <svg class="contours" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g fill="none" stroke="#cdbf8f" stroke-width="1">
+          <path d="M-20,340 C120,300 180,380 320,330 C460,280 520,360 660,320 C760,290 800,310 840,300"/>
+          <path d="M-20,300 C110,265 190,335 330,285 C470,235 530,315 670,275 C770,245 800,265 840,255"/>
+          <path d="M-20,260 C100,230 200,290 340,240 C480,190 540,270 680,230 C780,200 800,220 840,210"/>
+          <path d="M-20,220 C90,195 210,245 350,195 C490,145 550,225 690,185 C790,155 800,175 840,165"/>
+          <path d="M-20,180 C80,160 220,200 360,150 C500,100 560,180 700,140 C800,110 800,130 840,120"/>
+          <path d="M-20,140 C70,125 230,155 370,105 C510,55 570,135 710,95 C810,65 800,85 840,75"/>
+        </g>
+      </svg>
+      <div class="hero-inner">
+        <div class="eyebrow mono">27.6° N, 75.0° E — Lakshmangarh, Rajasthan</div>
+        <h1>Mapping land, energy and risk across Indian landscapes.</h1>
+        <p class="lede">Assistant Professor of Geography at Mody University of Science and Technology, working on renewable energy assessment, geospatial modeling and natural resource management through remote sensing and GIS.</p>
+        <div class="hero-links">
+          <a href="https://scholar.google.com/citations?user=72usOMIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Sunil-Singh-40?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate</a>
+          <a href="mailto:sunilgeo95@gmail.com">sunilgeo95@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+
+      <section id="about">
+        <h2>About <span class="tag">01</span></h2>
+        <div class="bio">
+          <p>I am an Assistant Professor of Geography in the Department of Arts, School of Liberal Arts and Sciences, at Mody University of Science and Technology, Rajasthan, where I conduct research in renewable energy assessment, geospatial modeling, natural resource management and sustainable development.</p>
+          <p>I completed my doctoral studies in Geography at Hemvati Nandan Bahuguna Garhwal University (a Central University), Uttarakhand. My dissertation examined the geospatial assessment of solar power potential for sustainable development in Tehri Garhwal district, Uttarakhand, using remote sensing and GIS methodologies.</p>
+          <p>My research has been published in Scopus-indexed and UGC-CARE listed journals, spanning solar energy potential assessment, forest fire risk zonation, watershed prioritization, morphometric analysis using geospatial technologies, and human–wildlife conflict. Through my research and teaching, I work toward evidence-based approaches to environmental challenges and sustainable resource management.</p>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education <span class="tag">02</span></h2>
+        <ul class="timeline">
+          <li>
+            <div class="period">2020 – 2024</div>
+            <div>
+              <div class="role">Ph.D. in Geography</div>
+              <div class="org">Hemvati Nandan Bahuguna Garhwal University (A Central University), Srinagar Garhwal, Uttarakhand</div>
+            </div>
+          </li>
+          <li>
+            <div class="period">2019 – 2020</div>
+            <div>
+              <div class="role">PG Diploma in RS &amp; GIS</div>
+              <div class="org">Dr. Shyama Prasad Mukherjee University (DSPMU), Ranchi, Jharkhand</div>
+            </div>
+          </li>
+          <li>
+            <div class="period">2017 – 2019</div>
+            <div>
+              <div class="role">M.Sc. Geography — Gold Medalist</div>
+              <div class="org">Hemvati Nandan Bahuguna Garhwal University (A Central University), Srinagar Garhwal, Uttarakhand</div>
+            </div>
+          </li>
+          <li>
+            <div class="period">2014 – 2017</div>
+            <div>
+              <div class="role">B.Sc.</div>
+              <div class="org">Govt. Gandhi Memorial Science College, University of Jammu, J&amp;K</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>Academic &amp; Teaching Experience <span class="tag">03</span></h2>
+        <ul class="timeline">
+          <li>
+            <div class="period">Sep 2024 – Present</div>
+            <div>
+              <div class="role">Assistant Professor</div>
+              <div class="org">Department of Arts, School of Liberal Arts and Sciences, Mody University of Science and Technology, Lakshmangarh, Rajasthan</div>
+            </div>
+          </li>
+          <li>
+            <div class="period">Nov 2023 – Aug 2024</div>
+            <div>
+              <div class="role">Assistant Professor (Guest Faculty)</div>
+              <div class="org">Department of Remote Sensing &amp; GIS Applications, Hemvati Nandan Bahuguna Garhwal University, Srinagar Garhwal, Uttarakhand</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="awards">
+        <h2>Awards &amp; Fellowships <span class="tag">04</span></h2>
+        <div class="award-grid">
+          <div class="award">
+            <div class="year mono">2023</div>
+            <div class="name">Young Scientist Award</div>
+            <div class="org">Uttarakhand State Council of Science &amp; Technology (UCOST)</div>
+          </div>
+          <div class="award">
+            <div class="year mono">2023</div>
+            <div class="name">ICSSR Doctoral Fellowship</div>
+            <div class="org">Indian Council of Social Science Research</div>
+          </div>
+          <div class="award">
+            <div class="year mono">2019</div>
+            <div class="name">UGC NET in Geography</div>
+            <div class="org">University Grants Commission</div>
+          </div>
+          <div class="award">
+            <div class="year mono">2019</div>
+            <div class="name">Gold Medal in Geography (M.Sc.)</div>
+            <div class="org">Hemvati Nandan Bahuguna Garhwal University</div>
+          </div>
+        </div>
+        <div style="margin-top:32px;">
+          <div style="font-weight:600; margin-bottom:10px;">Certificate courses — IIRS-ISRO, Dehradun</div>
+          <ul style="margin:0; padding-left:20px; color:var(--mist);">
+            <li>Basics of Remote Sensing, GIS &amp; GNSS (2021)</li>
+            <li>Geospatial Modelling for Watershed Management (2021)</li>
+            <li>Remote Sensing, GIS Applications (2021)</li>
+            <li>Geospatial Technology for Archaeological Studies (2021)</li>
+          </ul>
+        </div>
+        <div style="margin-top:28px; color:var(--mist); font-size:0.92rem;">
+          Life Member, Society of Remote Sensing · Life Member, American Association of Geographers
+        </div>
+      </section>
+
+      <section id="tools">
+        <h2>Technical Skills <span class="tag">05</span></h2>
+        <div class="toolgrid">
+          <span>QGIS</span><span>ArcGIS</span><span>ArcGIS Pro</span><span>ERDAS IMAGINE</span>
+          <span>Google Earth Engine</span><span>Python</span><span>R</span><span>SPSS</span><span>JAMOVI</span>
+        </div>
+      </section>
+
+      <section id="work">
+        <h2>Publications &amp; Profiles <span class="tag">06</span></h2>
+        <p style="color:var(--mist); max-width:60ch; margin-bottom:24px;">
+          Full lists of journal papers, book chapters, research projects and conference proceedings are maintained on the profiles below.
+        </p>
+        <div class="outbound">
+          <a href="https://scholar.google.com/citations?user=72usOMIAAAAJ&hl=en" target="_blank" rel="noopener">
+            <div class="k">Google Scholar →</div>
+            <div class="d">Citations, journal papers and Scopus-indexed publications</div>
+          </a>
+          <a href="https://www.researchgate.net/profile/Sunil-Singh-40?ev=hdr_xprf" target="_blank" rel="noopener">
+            <div class="k">ResearchGate →</div>
+            <div class="d">Full-text papers, project updates and academic network</div>
+          </a>
+          <a href="https://sites.google.com/view/drsunilsingh/books" target="_blank" rel="noopener">
+            <div class="k">Books →</div>
+            <div class="d">Authored and edited volumes</div>
+          </a>
+          <a href="https://sites.google.com/view/drsunilsingh/research-projects" target="_blank" rel="noopener">
+            <div class="k">Research Projects →</div>
+            <div class="d">Funded and ongoing project work</div>
+          </a>
+          <a href="https://sites.google.com/view/drsunilsingh/conferenceseminarsworkshops" target="_blank" rel="noopener">
+            <div class="k">Conferences, Seminars &amp; Workshops →</div>
+            <div class="d">Presentations and academic events</div>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" style="border-bottom:none; margin-bottom:0;">
+        <h2>Contact <span class="tag">07</span></h2>
+        <div class="contact-block">
+          <address>
+            Department of Arts (Geography)<br>
+            School of Liberal Arts and Sciences<br>
+            Mody University of Science and Technology<br>
+            Lakshmangarh, Sikar, Rajasthan – 332311, India<br><br>
+            <a href="mailto:sunilgeo95@gmail.com">sunilgeo95@gmail.com</a><br>
+            <a href="mailto:sunilsingh.slas@modyuniversity.ac.in">sunilsingh.slas@modyuniversity.ac.in</a>
+          </address>
+          <div class="cta-box">
+            <h3>Work together</h3>
+            <p>Open to GIS &amp; remote sensing consulting, geospatial training workshops, and guidance on dissertations or data analysis using QGIS, ArcGIS, R or Python.</p>
+            <a href="mailto:sunilgeo95@gmail.com?subject=Project%20enquiry">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      © <span id="year"></span> Dr. Sunil Singh · Department of Geography, Mody University of Science and Technology
+    </footer>
+  </div>
+</div>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Active section highlight in sidebar nav
+  const links = document.querySelectorAll('.sidenav a');
+  const sections = [...links].map(l => document.querySelector(l.getAttribute('href')));
+  const onScroll = () => {
+    let idx = 0;
+    sections.forEach((sec, i) => {
+      if (sec && sec.getBoundingClientRect().top < 140) idx = i;
+    });
+    links.forEach((l, i) => l.classList.toggle('active', i === idx));
+  };
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+</body>
+</html>
