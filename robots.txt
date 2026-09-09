@@ -1,4 +1,4 @@
-User-agent: *
-Allow: /
+User-agent: drsunilsingh95.github.io
+Allow: /drsunilsingh95.github.io
 
-Sitemap: https://YOUR-DOMAIN-HERE/sitemap.xml
+Sitemap: https://drsunilsingh95.github.io
